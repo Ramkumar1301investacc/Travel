@@ -7,6 +7,7 @@ import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { UpperfooterComponent } from './component/upperfooter/upperfooter.component';
 import { TravelHomeComponent } from './pages/travel-home/travel-home.component';
+import { TravelDestinationComponent } from './pages/travel-destination/travel-destination.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TravelHomeComponent } from './pages/travel-home/travel-home.component';
     NavbarComponent,
     FooterComponent,
     UpperfooterComponent,
-    TravelHomeComponent
+    TravelHomeComponent,
+    TravelDestinationComponent
   ],
   imports: [
     BrowserModule,
