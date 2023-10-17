@@ -23,40 +23,12 @@ h1 {
     text-transform: uppercase;
 }
 
-/* .container1 {
-    width: 684px;
-    height: 523px;
-    flex-shrink: 0;
-    border-radius: 1.5rem;
-    border: 1px solid #CEE7F3;
-    background: #FBFDFE;
-    box-shadow: 0px 4px 24px 0px rgba(134, 173, 193, 0.25);
-} */
-
-/* .inputcontainer {
-    border-radius: 0.5rem;
-    border: 1px solid var(--gray-300, #D0D5DD);
-    background: var(--base-white, #FFF);
-    box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
-    justify-content: center;
-
-} */
-/* 
-select {
-    color: #828394;
-    border: #828394;
-    width: 70%;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5rem;
-} */
-
 .form-card {
     border-radius: 24px;
     border: 1px solid #CEE7F3;
     background: #FBFDFE;
     box-shadow: 0px 4px 24px 0px rgba(134, 173, 193, 0.25);
+    width: 684px;
 }
 
 .form-main {
@@ -64,7 +36,7 @@ select {
 }
 
 .travel-image {
-    width: 100%;
+    width: 95%;
 }
 
 .form-section-body {
