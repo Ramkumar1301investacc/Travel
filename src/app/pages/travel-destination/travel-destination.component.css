@@ -1,3 +1,6 @@
+.cola{
+    border:black 1px solid
+}
 h1 {
     color: #535353;
     text-align: center;
@@ -19,7 +22,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.container {
+.container1 {
     width: 684px;
     height: 523px;
     flex-shrink: 0;
@@ -35,6 +38,7 @@ h1 {
     background: var(--base-white, #FFF);
     box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
     justify-content: center;
+    
 }
 
 select {
