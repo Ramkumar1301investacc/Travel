@@ -1,0 +1,47 @@
+<div class="form-card card">
+
+    <div class="card-header d-flex align-items-center">
+        <div class="card-sub-header d-flex justify-content-between align-items-center w-100">
+            <img src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Back Arrow Icon.svg" alt=""
+                routerLink="/travel-destination" />
+            <p class="title mb-0">Ready to Explore a New Horizon?</p>
+        </div>
+
+    </div>
+
+    <div class="card-body form-section-body">
+        <form>
+
+            <div class="mb-3">
+                <label class="form-label">Choose number of travellers <span class="astrick">*</span></label>
+                <ul class="traveller-input-section d-flex justify-content-between align-items-center">
+
+                    <li class="travellers-num active">1</li>
+                    <li class="travellers-num">2</li>
+                    <li class="travellers-num">3</li>
+                    <li class="travellers-num">4</li>
+                    <li class="travellers-num"><img
+                            src="../../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Chevron-down(Black Input calender)-Icon.svg">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Choose your age <span class="astrick">*</span></label>
+                <div class="d-flex justify-content-between align-items-center">
+                    <select class="form-select shadow-none age-select" id="inputGroupSelect01">
+                        <option selected>Select Age</option>
+                        <option value="1">20</option>
+                        <option value="2">21</option>
+                        <option value="3">22</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="submit-btn-div text-center">
+                <button type="button" class="btn submit-btn" replaceUrl="true" routerLink="/travel-destination/travellers-number">Next</button>
+            </div>
+
+        </form>
+    </div>
+</div>

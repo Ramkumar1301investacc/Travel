@@ -8,6 +8,9 @@ import { FooterComponent } from './component/footer/footer.component';
 import { UpperfooterComponent } from './component/upperfooter/upperfooter.component';
 import { TravelHomeComponent } from './pages/travel-home/travel-home.component';
 import { TravelDestinationComponent } from './pages/travel-destination/travel-destination.component';
+import { DestinationDateComponent } from './pages/travel-destination/destination-date/destination-date.component';
+import { TravellersAgeComponent } from './pages/travel-destination/travellers-age/travellers-age.component';
+import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { TravelDestinationComponent } from './pages/travel-destination/travel-de
     FooterComponent,
     UpperfooterComponent,
     TravelHomeComponent,
-    TravelDestinationComponent
+    TravelDestinationComponent,
+    DestinationDateComponent,
+    TravellersAgeComponent,
+    MobileNumComponent
   ],
   imports: [
     BrowserModule,
