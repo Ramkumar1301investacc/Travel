@@ -11,6 +11,7 @@ import { TravelDestinationComponent } from './pages/travel-destination/travel-de
 import { DestinationDateComponent } from './pages/travel-destination/destination-date/destination-date.component';
 import { TravellersAgeComponent } from './pages/travel-destination/travellers-age/travellers-age.component';
 import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
+import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile
     TravelDestinationComponent,
     DestinationDateComponent,
     TravellersAgeComponent,
-    MobileNumComponent
+    MobileNumComponent,
+    GetOtpComponent
   ],
   imports: [
     BrowserModule,

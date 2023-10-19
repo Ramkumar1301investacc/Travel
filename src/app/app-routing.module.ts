@@ -5,6 +5,7 @@ import { TravelDestinationComponent } from './pages/travel-destination/travel-de
 import { DestinationDateComponent } from './pages/travel-destination/destination-date/destination-date.component';
 import { TravellersAgeComponent } from './pages/travel-destination/travellers-age/travellers-age.component';
 import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
+import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.component';
 
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
     children: [
       {path : "", component: DestinationDateComponent},
       {path : "travellers-age", component: TravellersAgeComponent},
-      {path : "travellers-number", component: MobileNumComponent}
+      {path : "travellers-number", component: MobileNumComponent},
+      {path: "get-otp", component:GetOtpComponent}
     ]
   }
 ];
