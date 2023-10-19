@@ -22,7 +22,7 @@
 }
 
 .form-section-body {
-    padding: 70px;
+    padding: 20px 70px 70px 70px;
 }
 
 .card-header {
@@ -36,6 +36,16 @@
 .card-sub-header {
     height: 15px;
     background: #FFF1C2;
+}
+
+.card-sub-heading {
+    color: #444;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.6px;
+    margin-bottom: 50px;
 }
 
 .input-section {
@@ -105,8 +115,8 @@ outline: none;
     width: 170px;
     height: 48px;
     color: #0B2C5C;
-
-font-family: Inter;
+    width: 66%;
+margin-top: 45px;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;

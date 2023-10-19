@@ -3,7 +3,7 @@
     <div class="card-header d-flex align-items-center">
         <div class="card-sub-header d-flex justify-content-between align-items-center w-100">
             <img src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Back Arrow Icon.svg" alt=""
-                routerLink="" />
+                routerLink="/travel-destination/travellers-number" />
             <p class="title mb-0">Final Step to Secure your adventure!</p>
         </div>
 
@@ -11,12 +11,10 @@
 
     <div class="card-body form-section-body">
         <form>
-            <div style="text-align: center;">
-                <p>Easy access to your insurance needs via WhatsApp!!</p>
-            </div>
+            <h3 class="card-sub-heading text-center">Easy access to your insurance needs via WhatsApp!!</h3>
             <div class="mb-3 text-center" >
                 <label class="form-label"> Please enter the OTP send on your Mobile Number <span class="astrick">*</span></label>
-                <div class=" d-flex justify-content-between align-items-center" style="width: 50%; margin:auto">
+                <div class=" d-flex justify-content-between align-items-center" style="width: 50%; margin:auto; margin-top:16px ">
 
                     <div class="otp-input" *ngFor = "let title of otpbox">
                      <input type="number" min="1" max="1">
