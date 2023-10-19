@@ -13,6 +13,8 @@ import { TravellersAgeComponent } from './pages/travel-destination/travellers-ag
 import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
 import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.component';
 
+import { NgOtpInputModule } from  'ng-otp-input';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOtpInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
