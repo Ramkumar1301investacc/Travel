@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./get-otp.component.css']
 })
 export class GetOtpComponent {
+  otpbox=[1,1,1,1];
 
 }
