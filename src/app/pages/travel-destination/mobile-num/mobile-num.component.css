@@ -22,7 +22,8 @@
 }
 
 .form-section-body {
-    padding: 70px;
+
+    padding: 20px 70px 70px 70px;
 }
 
 .card-header {
@@ -46,13 +47,27 @@
     box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
 }
 
-.search-div,
-.down-arrow-div {
-    width: 32px;
-    height: 32px;
-    border-radius: 4px;
-    border: 1px solid var(--neutral-n-400, #D8DAE5);
-    background: var(--neutral-n-0, #FFF);
+.card-sub-heading {
+    color: #444;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15.6px;
+    margin-bottom: 50px;
+}
+
+.number-input {
+    padding: 24px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: var(--base-white, #FFF);
+    box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
+}
+
+.number-input .form-select,
+.form-control {
+    border: none;
 }
 
 .destination-input {
@@ -64,13 +79,43 @@
     border: none
 }
 
-.submit-btn {
+.input-group > .form-select {
+    color: #2BA4C9;
+font-size: 20px;
+font-weight: 600;
+}
+
+.otp-btn {
     border-radius: 8px;
     border: 0.5px solid #FEDF72;
     background: #FEE89A;
-    width: 170px;
-    height: 48px;
+    width: 100%;
+    height: 58px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
 }
+
+.form-switch .form-check-input {
+    background-image: url('../../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/WhatsApp Icon.svg');
+    border: 0.25px solid #D0F1D3;
+    background-color: #E0F6E2;
+}
+
+
+
+.whatsapp-switch {
+    width: 40px;
+    height: 20px;
+}
+
+.whatsapp-label {
+    font-size: 8px;
+}
+
+/* .form-switch .form-check-input:checked {
+    background-image: url('../../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Whatsapp Toggle Switch-Icon.svg');
+} */
 
 .astrick {
     color: #E43F52;
