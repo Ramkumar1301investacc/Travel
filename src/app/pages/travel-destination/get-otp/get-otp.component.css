@@ -129,6 +129,8 @@ text-transform: capitalize;
     color: #E43F52;
 }
 
+
+
 @media screen and (max-width : 900px) {
     .form-card {
         width: 100%;
