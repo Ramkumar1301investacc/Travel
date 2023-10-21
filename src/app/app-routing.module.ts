@@ -6,6 +6,7 @@ import { DestinationDateComponent } from './pages/travel-destination/destination
 import { TravellersAgeComponent } from './pages/travel-destination/travellers-age/travellers-age.component';
 import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
 import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.component';
+import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
       {path : "travellers-number", component: MobileNumComponent},
       {path: "get-otp", component:GetOtpComponent}
     ]
-  }
+  },
+  { path: 'first-quotes', component: FirstQuotesComponent}
 ];
 
 @NgModule({
