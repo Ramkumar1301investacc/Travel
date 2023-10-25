@@ -7,6 +7,8 @@ import { TravellersAgeComponent } from './pages/travel-destination/travellers-ag
 import { MobileNumComponent } from './pages/travel-destination/mobile-num/mobile-num.component';
 import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.component';
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
+import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
+import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
 
 
 const routes: Routes = [
@@ -14,13 +16,19 @@ const routes: Routes = [
   {
     path: 'travel-destination', component: TravelDestinationComponent,
     children: [
-      {path : "", component: DestinationDateComponent},
-      {path : "travellers-age", component: TravellersAgeComponent},
-      {path : "travellers-number", component: MobileNumComponent},
-      {path: "get-otp", component:GetOtpComponent}
+      { path: "", component: DestinationDateComponent },
+      { path: "travellers-age", component: TravellersAgeComponent },
+      { path: "travellers-number", component: MobileNumComponent },
+      { path: "get-otp", component: GetOtpComponent }
     ]
   },
-  { path: 'first-quotes', component: FirstQuotesComponent}
+  {
+    path: 'first-quotes', component: FirstQuotesComponent,
+    children: [
+      { path: "", component: QuotesComponent },
+      { path: "compare-quotes", component: CompareQuotesComponent }
+    ]
+  },
 ];
 
 @NgModule({

@@ -15,6 +15,8 @@ import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.comp
 
 import { NgOtpInputModule } from  'ng-otp-input';
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
+import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
+import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.componen
     TravellersAgeComponent,
     MobileNumComponent,
     GetOtpComponent,
-    FirstQuotesComponent
+    FirstQuotesComponent,
+    QuotesComponent,
+    CompareQuotesComponent
   ],
   imports: [
     BrowserModule,
