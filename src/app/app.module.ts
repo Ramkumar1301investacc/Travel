@@ -17,6 +17,7 @@ import { NgOtpInputModule } from  'ng-otp-input';
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
+import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/comp
     GetOtpComponent,
     FirstQuotesComponent,
     QuotesComponent,
-    CompareQuotesComponent
+    CompareQuotesComponent,
+    TravellerFormComponent
   ],
   imports: [
     BrowserModule,

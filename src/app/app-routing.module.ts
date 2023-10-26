@@ -9,6 +9,7 @@ import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.comp
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
+import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
 
 
 const routes: Routes = [
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: "compare-quotes", component: CompareQuotesComponent }
     ]
   },
+  { path: 'traveller-form', component: TravellerFormComponent }
 ];
 
 @NgModule({

@@ -2,6 +2,9 @@
     background-color: hsla(194, 65%, 52%, 1);
     height: 80px;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav-link img {
