@@ -1,0 +1,38 @@
+.cola{
+    border: 2px solid red ;
+}
+.content>h1{
+    font-size: 32px;
+    font-weight: 700;
+line-height: 40px;
+}
+.content>p{
+    font-size: 16px;
+    font-weight: 400;
+line-height: 24px;
+}
+.traveller-form,.ekyc-details,.nominee-details,.medical-details{
+    border:2px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+}
+label{
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%
+}
+.form-name{
+    width: 100%;
+}
+span{
+    color: #D9534F;
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%
+}
+.form-content{
+    width:100%;
+    margin-left: 9px;
+}
