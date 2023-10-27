@@ -6,6 +6,11 @@
     box-shadow: 0px 4px 16px 0px rgba(116, 140, 170, 0.24);
 }
 
+.quotes {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 .side-navbar {
     border-radius: 12px;
     border: 1px solid #CCC;
@@ -59,6 +64,17 @@
     font-size: 24px;
     color: #0B2C5C;
     font-weight: 600;
+}
+
+.cross-sect {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: #FECD20;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    cursor: pointer;
 }
 
 @media screen and (max-width : 900px) {
