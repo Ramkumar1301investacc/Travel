@@ -64,6 +64,14 @@
     border: none
 }
 
+.all-countries-list {
+    border: 1px solid red;
+    background-color: white;
+    position: absolute;
+    height: 200px;
+    overflow-y: scroll;
+}
+
 .submit-btn {
     border-radius: 8px;
     border: 0.5px solid #FEDF72;

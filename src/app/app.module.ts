@@ -18,6 +18,8 @@ import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.componen
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
 import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { TravellerFormComponent } from './pages/traveller-form/traveller-form.co
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgOtpInputModule
+    NgOtpInputModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
