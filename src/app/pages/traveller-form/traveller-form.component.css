@@ -36,3 +36,16 @@ line-height: 120%
     width:100%;
     margin-left: 9px;
 }
+button{
+    border-radius: 8px;
+border: 0.5px solid #C2DDFF;
+background: #FFF;
+padding: 10px;
+color: #333;
+
+
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%;
+}
