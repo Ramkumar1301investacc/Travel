@@ -13,24 +13,36 @@ export class DestinationDateComponent {
 
   countries: any = [];
 
-  enteredSearchValue : any = ''
+  searchText: string = '';
 
-  @Output()
-  searchTextChanged: EventEmitter<string> = new EventEmitter<string>()
-
-  onSearchTextChanged()
-  {
-    this.searchTextChanged.emit(this.enteredSearchValue)
+  onSearchTextEntered(searchValue: string) {
+    this.searchText = searchValue;
+    // console.log(this.searchText)
   }
 
   ngOnInit() {
     this.getCountries.getCountriesApi().subscribe((data: any) => {
       let allCountriesName = data['data'];
       allCountriesName.map((country: any) => {
-        console.log(country.country);
+        // console.log(country.country);
         this.countries.push(country.country)
       })
     })
+  }
+
+  divClass = '';
+  classDiv = ''
+
+  divClose() {
+    this.classDiv = 'd-none'
+  }
+
+  divOpen() {
+    this.classDiv = 'd-block'
+  }
+
+  addBadge() {
+
   }
 
 }

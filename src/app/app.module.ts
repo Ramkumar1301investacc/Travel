@@ -20,6 +20,7 @@ import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/comp
 import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     FirstQuotesComponent,
     QuotesComponent,
     CompareQuotesComponent,
-    TravellerFormComponent
+    TravellerFormComponent,
+    CountrySearchBoxComponent
   ],
   imports: [
     BrowserModule,

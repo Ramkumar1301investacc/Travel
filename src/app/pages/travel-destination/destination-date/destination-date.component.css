@@ -65,11 +65,49 @@
 }
 
 .all-countries-list {
-    border: 1px solid red;
     background-color: white;
     position: absolute;
     height: 200px;
     overflow-y: scroll;
+    z-index: 99;
+    top: 100px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
+}
+
+.all-countries-list-close {
+    display: none;
+}
+
+.all-countries-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* .all-countries-list:active {
+    display: none;
+} */
+
+.countries-name {
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+.countries-name:hover {
+    background: #EEF8FB;
+}
+
+.final-destination-badge .badge {
+    border-radius: 40px;
+    border: 0.5px solid #ABDDED;
+    background-color: #CDEBF4 !important;
+    color: black;
+    cursor: pointer;
+}
+
+.final-destination-badge .badge img {
+    width: 12px;
+    height: 12px;
 }
 
 .submit-btn {
