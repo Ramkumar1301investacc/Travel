@@ -11,6 +11,6 @@ export class GetcountriesService {
   ) { }
 
   getCountriesApi() {
-    return this.http.get('https://countriesnow.space/api/v0.1/countries/population')
+    return this.http.get('https://countriesnow.space/api/v0.1/countries')
   }
 }

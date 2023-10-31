@@ -11,27 +11,31 @@
 
     <div class="card-body form-section-body">
         <form>
-            <div class="position-relative border">
+            <div class="position-relative">
 
-                <app-country-search-box (searchTextChanged)="onSearchTextEntered($event)" (click) = 'divOpen()'></app-country-search-box>
+                <app-country-search-box (searchTextChanged)="onSearchTextEntered($event)"
+                    (click)='divOpen()'></app-country-search-box>
 
                 <div [ngClass]="classDiv">
                     <div [ngClass]="searchText === '' ? 'd-none' : 'all-countries-list w-100 mt-2'">
                         <div *ngFor="let country of countries">
                             <div *ngIf="searchText === '' || country.toLowerCase().includes(searchText)">
-                                <p class="countries-name" (click) ="divClose()">{{country}} </p>
+                                <p class="countries-name" (click)="divClose()" (click)="getValue($event)" (click)="sendBadgeData()"
+                                >{{country}}
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="final-destination-badge">
-                    <span class="badge bg-primary me-2">India <img
-                            src="../../../../assets/Travel_Page_Assets/Quotes Screen/Icons/cross mark.svg"
-                            alt="cross-mark"></span>
-                    <span class="badge bg-primary me-2">India <img
-                            src="../../../../assets/Travel_Page_Assets/Quotes Screen/Icons/cross mark.svg"
-                            alt="cross-mark"></span>
+                    <span *ngFor="let badge of badgeItems; let i = index" class="badge bg-primary me-2"
+                        (click)="delete(i)">{{badge}}
+                        <img src="../../../../assets/Travel_Page_Assets/Quotes Screen/Icons/cross mark.svg"
+                            alt="cross-mark">
+                    </span>
+
+
                 </div>
             </div>
 
