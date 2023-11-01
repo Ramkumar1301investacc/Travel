@@ -46,113 +46,74 @@
   </div>
 
   <div class="row">
-    <div class="col-lg-5 text-end">
-      <img class="travel-image"
+    
+    <div class="col-lg-5 text-end" [ngSwitch]="badges[0]">
+
+      <img class="travel-image" *ngSwitchCase=""
         src="../../../assets/Travel_Page_Assets/Single Trip Flow/Illustrations/Go Travel Illustration Group.svg"
         alt="" />
-        <div *ngFor="let badge of badges">{{badge}}
-        </div>
-        <p *ngIf="badges[0]"> Au</p>
-      <p>First Element of Badges array {{badges[0]}}</p>
-      <p>{{badgeImage}}</p>
-      <!-- <p>badge image value {{badgeImage}}</p> -->
-      <!-- <div [ngSwitch]="badgeImage">
 
-          <div *ngSwitchCase="'Australia'">Australia Country</div>
- 
-        <p *ngSwitchDefault>Default value</p>
-      </div> -->
+      <img class="travel-image" *ngSwitchCase="'Australia '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Austrailia Illustration-SVG.svg"
+      alt="" />
 
-      <!-- <div *ngIf="badgeImage">
-        <p>Hello Ram </p>
-      </div> -->
+      <img class="travel-image" *ngSwitchCase="'United States '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/USA liberty Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'United Arab Emirates '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/United Arab Emirates(UAE Couple)Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Malaysia '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Malaysia Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Singapore '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Singapore-Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Japan '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Japan Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Switzerland '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Switzerland Snow Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Canada '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Canada-Cute-Gilr-Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'United Kingdom '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/United Kingdom-Illustration-SVG.svg"
+      alt="" />
+
+      <img class="travel-image" *ngSwitchCase="'Thailand '"
+      src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/Thailand Illustration-SVG.svg"
+      alt="" />
       
 
-        <div [ngSwitch]="badges[0]">
+      <img class="travel-image" *ngSwitchDefault
+        src="../../../assets/Travel_Page_Assets/All_Nation_Travel_Illustrations/For Less Known Nation World default Illustration-SVG.svg"
+        alt="" />
 
-          <div *ngSwitchCase="'Australia'">Australia Country</div>
-          <div *ngSwitchCase="'Austria'">Austria Country</div>
-          <p *ngSwitchDefault>Default value</p>
-        </div>
 
-    
+      <!-- <div *ngFor="let badge of badges">{{badge}}
+      </div>
+
+      <p>First Element of array{{badges[0]}}</p> -->
+
+      <!-- <div [ngSwitch]="badges[0]">
+        <div *ngSwitchCase="'Australia '">Australia Country</div>
+        <div *ngSwitchCase="'India '">India Country</div>
+        <p *ngSwitchDefault>Default value</p>
+      </div> -->
 
     </div>
 
     <div class="col-lg-7 pt-4 form-main">
-      <!-- <div class="form-card card">
 
-        <div class="card-header d-flex align-items-center">
-          <div class="card-sub-header d-flex justify-content-between align-items-center w-100">
-            <img src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Back Arrow Icon.svg" alt=""
-              routerLink="" />
-            <p class="title mb-0">Ready to Explore a New Horizon?</p>
-          </div>
-
-        </div>
-
-        <div class="card-body form-section-body">
-          <form>
-
-            <div class="mb-3">
-              <label class="form-label">Choose your Destination <span class="astrick">*</span></label>
-              <div class="input-section border d-flex justify-content-between align-items-center">
-
-                <div class="search-div border d-flex justify-content-center align-items-center">
-                  <img src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Search Glass Icon.svg" alt="">
-                </div>
-                <input type="text" class="form-control shadow-none destination-input" id="text"
-                  placeholder="Enter Your Destination">
-                <div class="down-arrow-div border d-flex justify-content-center align-items-center">
-                  <img
-                    src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Chevron-down(Gray-Calender)-Icon.svg"
-                    alt="">
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="mb-3">
-              <label class="form-label">Choose Your Dates <span class="astrick">*</span></label>
-              <div class="input-section border d-flex justify-content-between align-items-center">
-
-                <div class="search-div border d-flex justify-content-center align-items-center">
-                  <img
-                    src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Arrow-left(Back for Input Folder)Icon.svg"
-                    alt="">
-                </div>
-
-                <select class="form-select shadow-none w-25" id="inputGroupSelect01">
-                  <option selected>November</option>
-                  <option value="1">January</option>
-                  <option value="2">February</option>
-                  <option value="3">March</option>
-                </select>
-
-                <select class="form-select shadow-none w-25" id="inputGroupSelect01">
-                  <option selected>2022</option>
-                  <option value="1">2023</option>
-                  <option value="2">2024</option>
-                  <option value="3">2025</option>
-                </select>
-
-                <div class="down-arrow-div border d-flex justify-content-center align-items-center">
-                  <img style="transform: rotate(180deg);"
-                    src="../../../assets/Travel_Page_Assets/Single Trip Flow/Icons/Arrow-left(Back for Input Folder)Icon.svg"
-                    alt="">
-                </div>
-
-              </div>
-            </div>
-
-            <div class="submit-btn-div text-center">
-              <button type="submit" class="btn submit-btn">Next</button>
-            </div>
-
-          </form>
-        </div>
-      </div> -->
       <router-outlet></router-outlet>
     </div>
   </div>

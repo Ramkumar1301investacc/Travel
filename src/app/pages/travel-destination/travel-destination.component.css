@@ -11,17 +11,20 @@ h1 {
     line-height: 3.5rem;
     letter-spacing: 0.04rem;
 }
-.progressbar-container{
-   text-align: center;
+
+.progressbar-container {
+    text-align: center;
 }
-.circle{
+
+.circle {
     width: 3px;
-height: 3px;
+    height: 3px;
     border-radius: 64px;
-background: #37AFD4;
+    background: #37AFD4;
 
 }
 
 .travel-image {
     width: 95%;
+    height: 100%;
 }

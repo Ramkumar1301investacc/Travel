@@ -11,7 +11,7 @@ import { SharedBadgeDataService } from 'src/app/service/shared-badge-data.servic
 })
 export class DestinationDateComponent {
 
-  constructor(private getCountries: GetcountriesService, private sharedBadgeService: SharedBadgeDataService ) { }
+  constructor(private getCountries: GetcountriesService, private sharedBadgeService: SharedBadgeDataService) { }
 
   countries: any = [];                                                     //array to store countries
 
@@ -56,9 +56,10 @@ export class DestinationDateComponent {
 
   //
 
- sendBadgeData()
- {
-  this.sharedBadgeService.send_data.next(this.badgeItems)
- }
+  firstBade = ''
+  sendBadgeData() {
+    this.sharedBadgeService.send_data.next(this.badgeItems);
+    // this.sharedBadgeService.sendFirstBadge.next(this.badgeItems[0]);
+  }
 
 }

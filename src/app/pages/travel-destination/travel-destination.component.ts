@@ -12,42 +12,26 @@ SharedBadgeDataService
 })
 export class TravelDestinationComponent implements OnInit {
 
-  // constructor(private getCountries : GetcountriesService) {}
-
-  // countryCode : any = [];
-
-  // ngOnInit() {
-  //   this.getCountries.getCountriesApi().subscribe((data : any) => {
-  //     let allCountriesName = data['data'];
-  //     allCountriesName.map((country : any) => {
-  //       console.log(country.code)
-  //     })
-  //   })
-  // }
-
   badges = [];
-  badgeImage : string = 'Austria'
+  // firstBadge = ''
   sub: Subscription
   constructor(private sharedBadge: SharedBadgeDataService) { }
- 
+
   ngAfterContentInit() {
     this.sub = this.sharedBadge.send_data.subscribe((data) => {
       this.badges = data;
-      console.log(this.badges);
+      // console.log(this.badges);
+      // console.log('First', this.badges[0]);
 
-      if(this.badges[0])
-      {
-        this.badgeImage = this.badges[0]
-      }
-      console.log(this.badgeImage)
     })
-   
 
+    // this.sub = this.sharedBadge.sendFirstBadge.subscribe((data) => {
+    //   this.firstBadge=data
+    // })
   }
 
-
   ngOnInit(): void {
-   
+
   }
 
 

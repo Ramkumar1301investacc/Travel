@@ -6,5 +6,6 @@ import { Subject } from 'rxjs';
 })
 export class SharedBadgeDataService {
   send_data = new Subject<any>();
+  // sendFirstBadge = new Subject<any>();
   constructor() { }
 }
