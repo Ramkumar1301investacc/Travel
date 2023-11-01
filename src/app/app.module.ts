@@ -21,6 +21,9 @@ import { TravellerFormComponent } from './pages/traveller-form/traveller-form.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
+import { FormPersonalDetailComponent } from './pages/traveller-form/form-personal-detail/form-personal-detail.component';
+import { FormEkycNomineeComponent } from './pages/traveller-form/form-ekyc-nominee/form-ekyc-nominee.component';
+import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical-details/form-medical-details.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { CountrySearchBoxComponent } from './pages/travel-destination/destinatio
     QuotesComponent,
     CompareQuotesComponent,
     TravellerFormComponent,
-    CountrySearchBoxComponent
+    CountrySearchBoxComponent,
+    FormPersonalDetailComponent,
+    FormEkycNomineeComponent,
+    FormMedicalDetailsComponent
   ],
   imports: [
     BrowserModule,

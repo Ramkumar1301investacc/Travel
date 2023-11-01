@@ -10,6 +10,9 @@ import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.componen
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
 import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
+import { FormPersonalDetailComponent } from './pages/traveller-form/form-personal-detail/form-personal-detail.component';
+import { FormEkycNomineeComponent } from './pages/traveller-form/form-ekyc-nominee/form-ekyc-nominee.component';
+import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical-details/form-medical-details.component';
 
 
 const routes: Routes = [
@@ -30,7 +33,14 @@ const routes: Routes = [
       { path: "compare-quotes", component: CompareQuotesComponent }
     ]
   },
-  { path: 'traveller-form', component: TravellerFormComponent }
+  { path: 'traveller-form', component: TravellerFormComponent,
+    children: [
+      {path: "", component: FormPersonalDetailComponent},
+      {path:"kyc-nominee", component: FormEkycNomineeComponent},
+      {path:"medical-details", component: FormMedicalDetailsComponent}
+
+    ]
+  }
 ];
 
 @NgModule({

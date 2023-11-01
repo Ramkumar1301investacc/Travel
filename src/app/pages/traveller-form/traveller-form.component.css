@@ -105,10 +105,31 @@ text-align: center;
     gap: 12px;
 
 }
+.quote{
+    color: #222;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+border-bottom: 0.8px solid var(--www-squaremouth-com-order-purchase-18026169981519199951171875-x-6735999755859375-default-mine-shaft, #333);
+}
+.quote>span{
+    color: #222;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+.quote-summary{
+    background-color: #EBF4FF;
+}
 .summary-heading{
     border-top: 1px solid #C0CBD8;
 
 border-bottom: 1px solid #C0CBD8;
+text-align: center;
 
 
 
@@ -116,9 +137,51 @@ border-bottom: 1px solid #C0CBD8;
 }
 .summary-title{
     color: #0B2C5C;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px; /* 130% */
+margin: 12px 0 12px 0 ;
+
+}
+.summary-content{
+   text-align: center;
+}
+.summary-details{
+
+    color: #333;
 font-family: Inter;
-font-size: 20px;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; /* 175% */
+}
+.summary-details>span{
+    color: #333;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 21px;
+}
+.policy-details{
+
+    color: #37AFD4;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
 font-style: normal;
 font-weight: 600;
-line-height: 26px; /* 130% */
+line-height: normal;
+text-decoration-line: underline;
+margin-top: 12px;
+}
+.policy-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+    margin-bottom:12px ;
 }
