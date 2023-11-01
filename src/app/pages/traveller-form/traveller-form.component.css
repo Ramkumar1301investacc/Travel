@@ -105,3 +105,20 @@ text-align: center;
     gap: 12px;
 
 }
+.summary-heading{
+    border-top: 1px solid #C0CBD8;
+
+border-bottom: 1px solid #C0CBD8;
+
+
+
+
+}
+.summary-title{
+    color: #0B2C5C;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 26px; /* 130% */
+}
