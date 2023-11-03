@@ -21,10 +21,42 @@ import { TravellerFormComponent } from './pages/traveller-form/traveller-form.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
+import { FormPersonalDetailComponent } from './pages/traveller-form/form-personal-detail/form-personal-detail.component';
+import { FormEkycNomineeComponent } from './pages/traveller-form/form-ekyc-nominee/form-ekyc-nominee.component';
+import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical-details/form-medical-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
 
 @NgModule({
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    UpperfooterComponent,
+    TravelHomeComponent,
+    TravelDestinationComponent,
+    DestinationDateComponent,
+    TravellersAgeComponent,
+    MobileNumComponent,
+    GetOtpComponent,
+    FirstQuotesComponent,
+    QuotesComponent,
+    CompareQuotesComponent,
+    TravellerFormComponent,
+    CountrySearchBoxComponent,
+    FormPersonalDetailComponent,
+    FormEkycNomineeComponent,
+    FormMedicalDetailsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgOtpInputModule,
+    HttpClientModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
     declarations: [
         AppComponent,
         NavbarComponent,
