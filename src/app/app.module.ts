@@ -24,8 +24,6 @@ import { CountrySearchBoxComponent } from './pages/travel-destination/destinatio
 import { FormPersonalDetailComponent } from './pages/traveller-form/form-personal-detail/form-personal-detail.component';
 import { FormEkycNomineeComponent } from './pages/traveller-form/form-ekyc-nominee/form-ekyc-nominee.component';
 import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical-details/form-medical-details.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
 
 @NgModule({
   declarations: [
@@ -48,17 +46,14 @@ import { DatePickerComponent } from "./pages/travel-destination/destination-date
     FormEkycNomineeComponent,
     FormMedicalDetailsComponent
   ],
-  
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgOtpInputModule,
-        HttpClientModule,
-        FormsModule,
-        NgbModule,
-        DatePickerComponent
-    ]
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgOtpInputModule,
+    HttpClientModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
