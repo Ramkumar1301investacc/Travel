@@ -48,32 +48,7 @@ import { DatePickerComponent } from "./pages/travel-destination/destination-date
     FormEkycNomineeComponent,
     FormMedicalDetailsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgOtpInputModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-    declarations: [
-        AppComponent,
-        NavbarComponent,
-        FooterComponent,
-        UpperfooterComponent,
-        TravelHomeComponent,
-        TravelDestinationComponent,
-        DestinationDateComponent,
-        TravellersAgeComponent,
-        MobileNumComponent,
-        GetOtpComponent,
-        FirstQuotesComponent,
-        QuotesComponent,
-        CompareQuotesComponent,
-        TravellerFormComponent,
-        CountrySearchBoxComponent,
-    ],
+  
     providers: [],
     bootstrap: [AppComponent],
     imports: [
