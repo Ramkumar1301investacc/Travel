@@ -54,34 +54,6 @@ import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
-    declarations: [
-        AppComponent,
-        NavbarComponent,
-        FooterComponent,
-        UpperfooterComponent,
-        TravelHomeComponent,
-        TravelDestinationComponent,
-        DestinationDateComponent,
-        TravellersAgeComponent,
-        MobileNumComponent,
-        GetOtpComponent,
-        FirstQuotesComponent,
-        QuotesComponent,
-        CompareQuotesComponent,
-        TravellerFormComponent,
-        CountrySearchBoxComponent,
-    ],
-    providers: [],
-    bootstrap: [AppComponent],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgOtpInputModule,
-        HttpClientModule,
-        FormsModule,
-        NgbModule,
-        DatePickerComponent
-    ]
+  
 })
 export class AppModule { }
