@@ -56,6 +56,11 @@
     cursor: pointer;
 }
 
+.img-focus {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
 .active {
     border: 1px solid #68C3DF;
     background: #EEF8FB;
@@ -64,6 +69,11 @@
 
 .age-select {
     padding: 15px 10px;
+   width: 100%;
+}
+
+.age-sect {
+    width: 45%;
 }
 
 .submit-btn {
@@ -76,6 +86,48 @@
 
 .astrick {
     color: #E43F52;
+}
+
+.traveller-age-section {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.traveller-age-section::-webkit-scrollbar {
+    display: none;
+  }
+
+.more-travellers {
+    top: 80px;
+    border: 1px solid #D0D5DD;
+    background: var(--neutral-n-0, #FFF);
+    box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
+    border-radius: 5px;
+}
+
+.more-travellers ul {
+    padding: 0;
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.more-travellers ul::-webkit-scrollbar {
+    display: none;
+  }
+
+.more-travellers ul li {
+    height: 50px;
+    width: 86px;
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-travellers ul li:hover {
+    background: #EEF8FB;
 }
 
 @media screen and (max-width : 900px) {

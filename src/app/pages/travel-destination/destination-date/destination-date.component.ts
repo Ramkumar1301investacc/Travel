@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { GetcountriesService } from 'src/app/service/getcountries.service';
-SharedBadgeDataService
-import { Output, EventEmitter, Input } from '@angular/core';
 import { SharedBadgeDataService } from 'src/app/service/shared-badge-data.service';
+import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-destination-date',
   templateUrl: './destination-date.component.html',
   styleUrls: ['./destination-date.component.css']
 })
+
+
 export class DestinationDateComponent {
 
   constructor(private getCountries: GetcountriesService, private sharedBadgeService: SharedBadgeDataService) { }
@@ -54,12 +55,9 @@ export class DestinationDateComponent {
     this.badgeItems.splice(i, 1)
   }
 
-  //
-
   firstBade = ''
   sendBadgeData() {
     this.sharedBadgeService.send_data.next(this.badgeItems);
-    // this.sharedBadgeService.sendFirstBadge.next(this.badgeItems[0]);
   }
 
 }

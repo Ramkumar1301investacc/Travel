@@ -55,37 +55,39 @@
     background: var(--base-white, #FFF);
     box-shadow: 0px 2px 8px 0px rgba(116, 134, 170, 0.16);
 }
-.otp-input{
+
+.otp-input {
 
     width: 58px;
-height: 65px;
-border-radius: 8px;
-border: 1px solid #37AFD4;
-background: #FFF;
-display: flex;
+    height: 65px;
+    border-radius: 8px;
+    border: 1px solid #37AFD4;
+    background: #FFF;
+    display: flex;
 
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
 }
-.otp-input>input{
-    
-  
-gap: 8px;
-width: 80%;
-height: 80%;
-border: none;
-border-bottom: 1px solid #37AFD4;
-border-width: 50%;
-text-align: center;
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-outline: none;
+
+.otp-input>input {
+
+
+    gap: 8px;
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-bottom: 1px solid #37AFD4;
+    border-width: 50%;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
 }
 
 
@@ -116,13 +118,14 @@ outline: none;
     height: 48px;
     color: #0B2C5C;
     width: 66%;
-margin-top: 45px;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px; /* 150% */
-letter-spacing: 0.16px;
-text-transform: capitalize;
+    margin-top: 45px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.16px;
+    text-transform: capitalize;
 }
 
 .astrick {

@@ -21,33 +21,37 @@ import { TravellerFormComponent } from './pages/traveller-form/traveller-form.co
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    UpperfooterComponent,
-    TravelHomeComponent,
-    TravelDestinationComponent,
-    DestinationDateComponent,
-    TravellersAgeComponent,
-    MobileNumComponent,
-    GetOtpComponent,
-    FirstQuotesComponent,
-    QuotesComponent,
-    CompareQuotesComponent,
-    TravellerFormComponent,
-    CountrySearchBoxComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgOtpInputModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        UpperfooterComponent,
+        TravelHomeComponent,
+        TravelDestinationComponent,
+        DestinationDateComponent,
+        TravellersAgeComponent,
+        MobileNumComponent,
+        GetOtpComponent,
+        FirstQuotesComponent,
+        QuotesComponent,
+        CompareQuotesComponent,
+        TravellerFormComponent,
+        CountrySearchBoxComponent,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOtpInputModule,
+        HttpClientModule,
+        FormsModule,
+        NgbModule,
+        DatePickerComponent
+    ]
 })
 export class AppModule { }

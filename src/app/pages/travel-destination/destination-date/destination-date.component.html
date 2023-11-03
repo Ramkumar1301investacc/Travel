@@ -20,8 +20,8 @@
                     <div [ngClass]="searchText === '' ? 'd-none' : 'all-countries-list w-100 mt-2'">
                         <div *ngFor="let country of countries">
                             <div *ngIf="searchText === '' || country.toLowerCase().includes(searchText)">
-                                <p class="countries-name" (click)="divClose()" (click)="getValue($event)" (click)="sendBadgeData()"
-                                >{{country}}
+                                <p class="countries-name" (click)="divClose()" (click)="getValue($event)"
+                                    (click)="sendBadgeData()">{{country}}
                                 </p>
                             </div>
                         </div>
@@ -48,21 +48,7 @@
                             alt="">
                     </div>
 
-                    <select class="form-select shadow-none w-25" id="inputGroupSelect01">
-                        <option selected>November</option>
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                    </select>
-
-                    <!-- <input type="date"> -->
-
-                    <select class="form-select shadow-none w-25" id="inputGroupSelect01">
-                        <option selected>2022</option>
-                        <option value="1">2023</option>
-                        <option value="2">2024</option>
-                        <option value="3">2025</option>
-                    </select>
+                    <app-date-picker class="w-100"></app-date-picker>
 
                     <div class="down-arrow-div border d-flex justify-content-center align-items-center">
                         <img style="transform: rotate(180deg);"
