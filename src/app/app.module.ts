@@ -22,6 +22,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
 import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
+import { FormComponent } from './pages/form/form.component';
+import { PersonalDetailComponent } from './pages/form/personal-detail/personal-detail.component';
+import { KycVerifyComponent } from './pages/form/kyc-verify/kyc-verify.component';
+import { MedicalFormComponent } from './pages/form/medical-form/medical-form.component';
 
 @NgModule({
     declarations: [
@@ -39,7 +43,11 @@ import { DatePickerComponent } from "./pages/travel-destination/destination-date
         QuotesComponent,
         CompareQuotesComponent,
         TravellerFormComponent,
-        CountrySearchBoxComponent
+        CountrySearchBoxComponent,
+        FormComponent,
+        PersonalDetailComponent,
+        KycVerifyComponent,
+        MedicalFormComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

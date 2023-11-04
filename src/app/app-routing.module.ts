@@ -9,10 +9,11 @@ import { GetOtpComponent } from './pages/travel-destination/get-otp/get-otp.comp
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
-import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
-import { FormPersonalDetailComponent } from './pages/traveller-form/form-personal-detail/form-personal-detail.component';
-import { FormEkycNomineeComponent } from './pages/traveller-form/form-ekyc-nominee/form-ekyc-nominee.component';
-import { FormMedicalDetailsComponent } from './pages/traveller-form/form-medical-details/form-medical-details.component';
+
+import { FormComponent } from './pages/form/form.component';
+import { PersonalDetailComponent } from './pages/form/personal-detail/personal-detail.component';
+import { KycVerifyComponent } from './pages/form/kyc-verify/kyc-verify.component';
+import { MedicalFormComponent } from './pages/form/medical-form/medical-form.component';
 
 
 const routes: Routes = [
@@ -33,14 +34,20 @@ const routes: Routes = [
       { path: "compare-quotes", component: CompareQuotesComponent }
     ]
   },
-  { path: 'traveller-form', component: TravellerFormComponent,
-    children: [
-      {path: "", component: FormPersonalDetailComponent},
-      {path:"kyc-nominee", component: FormEkycNomineeComponent},
-      {path:"medical-details", component: FormMedicalDetailsComponent}
-
+  
+  {
+    path:'traveller-form',component:FormComponent,
+    children:[
+      {path:"", component:PersonalDetailComponent},
+      {path:"kyc-nominee",component:KycVerifyComponent},
+      {path:"medical-details",component:MedicalFormComponent}
     ]
   }
+
+
+
+
+
 ];
 
 @NgModule({
