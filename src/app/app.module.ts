@@ -17,7 +17,7 @@ import { NgOtpInputModule } from  'ng-otp-input';
 import { FirstQuotesComponent } from './pages/first-quotes/first-quotes.component';
 import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
-import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component';
+/* import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component'; */
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
@@ -42,7 +42,7 @@ import { MedicalFormComponent } from './pages/form/medical-form/medical-form.com
         FirstQuotesComponent,
         QuotesComponent,
         CompareQuotesComponent,
-        TravellerFormComponent,
+       /*  TravellerFormComponent, */
         CountrySearchBoxComponent,
         FormComponent,
         PersonalDetailComponent,
