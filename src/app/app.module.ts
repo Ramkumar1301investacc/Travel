@@ -24,37 +24,6 @@ import { CountrySearchBoxComponent } from './pages/travel-destination/destinatio
 import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
 
 @NgModule({
-<<<<<<< HEAD
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    UpperfooterComponent,
-    TravelHomeComponent,
-    TravelDestinationComponent,
-    DestinationDateComponent,
-    TravellersAgeComponent,
-    MobileNumComponent,
-    GetOtpComponent,
-    FirstQuotesComponent,
-    QuotesComponent,
-    CompareQuotesComponent,
-    TravellerFormComponent,
-    CountrySearchBoxComponent,
-    FormPersonalDetailComponent,
-    FormEkycNomineeComponent,
-    FormMedicalDetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgOtpInputModule,
-    HttpClientModule,
-    FormsModule
-  ],
-  providers: [],
-  
-=======
     declarations: [
         AppComponent,
         NavbarComponent,
@@ -82,6 +51,5 @@ import { DatePickerComponent } from "./pages/travel-destination/destination-date
         FormsModule,
         DatePickerComponent
     ]
->>>>>>> e6d4c1549287c105a7e469990feff43e76d109c6
 })
 export class AppModule { }
