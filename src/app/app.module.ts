@@ -26,6 +26,7 @@ import { FormComponent } from './pages/form/form.component';
 import { PersonalDetailComponent } from './pages/form/personal-detail/personal-detail.component';
 import { KycVerifyComponent } from './pages/form/kyc-verify/kyc-verify.component';
 import { MedicalFormComponent } from './pages/form/medical-form/medical-form.component';
+import { FinalFormComponent } from './pages/form/final-form/final-form.component';
 
 @NgModule({
     declarations: [
@@ -47,7 +48,8 @@ import { MedicalFormComponent } from './pages/form/medical-form/medical-form.com
         FormComponent,
         PersonalDetailComponent,
         KycVerifyComponent,
-        MedicalFormComponent
+        MedicalFormComponent,
+        FinalFormComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
