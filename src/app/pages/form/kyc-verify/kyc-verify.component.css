@@ -5,7 +5,7 @@
 }
 .form-pages{
     display: flex;
-    gap: 40px;
+   
     align-items: center;
     text-align: center;
    
@@ -24,6 +24,22 @@ align-items: center;
 
 
 }
+.page-inactive{
+    border-radius: 4px;
+border: 1px dashed #99C7FF;
+background: #EBF4FF;
+height: 35px;
+width: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.line{
+    border: 1px dashed #0B2C5C;
+     width: 40px;
+     height: 1px;
+     
+ }
 h1{
     color: #0B2C5C;
 
