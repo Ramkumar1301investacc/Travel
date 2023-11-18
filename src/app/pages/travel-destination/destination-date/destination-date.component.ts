@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, ViewChild } from '@angular/core';
 import { GetcountriesService } from 'src/app/service/getcountries.service';
 import { SharedBadgeDataService } from 'src/app/service/shared-badge-data.service';
 import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { Output } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-destination-date',
@@ -11,8 +13,10 @@ import { NgbPaginationModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap'
 
 
 export class DestinationDateComponent {
-
-  constructor(private getCountries: GetcountriesService, private sharedBadgeService: SharedBadgeDataService) { }
+ 
+  constructor(private getCountries: GetcountriesService, private sharedBadgeService: SharedBadgeDataService ,
+    private renderer: Renderer2
+    ) { }
 
   countries: any = [];                                                     //array to store countries
 
@@ -59,5 +63,29 @@ export class DestinationDateComponent {
   sendBadgeData() {
     this.sharedBadgeService.send_data.next(this.badgeItems);
   }
+ /*  @Input() progressBar: ElementRef | undefined; */
+@Output() onButtonClick = new EventEmitter<object>();
 
+
+   updateProgressBar(){
+    console.log("clicked Buttton")
+    const moveProgress=document.querySelector('.cable-car') as HTMLElement | null;
+    if (moveProgress) {
+      
+      moveProgress.style.marginLeft = '350px';
+      
+      // transition properties
+      moveProgress.style.transition = 'margin-left 5s ease';
+
+      moveProgress.style.animationDuration = '3s';
+
+      moveProgress.style.animationIterationCount = 'infinite';
+      moveProgress.style.animationDirection = 'alternate';
+    }else{
+      console.log('Style Not Applied ')
+    }
+      // Emit an event to notify the parent component
+      this.onButtonClick.emit();
+   }
 }
+  
