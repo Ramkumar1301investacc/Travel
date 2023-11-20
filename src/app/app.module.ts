@@ -19,7 +19,7 @@ import { QuotesComponent } from './pages/first-quotes/quotes/quotes.component';
 import { CompareQuotesComponent } from './pages/first-quotes/compare-quotes/compare-quotes.component';
 /* import { TravellerFormComponent } from './pages/traveller-form/traveller-form.component'; */
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule ,ReactiveFormsModule} from '@angular/forms';
 import { CountrySearchBoxComponent } from './pages/travel-destination/destination-date/country-search-box/country-search-box.component';
 import { DatePickerComponent } from "./pages/travel-destination/destination-date/date-picker/date-picker.component";
 import { FormComponent } from './pages/form/form.component';
@@ -59,6 +59,7 @@ import { FinalFormComponent } from './pages/form/final-form/final-form.component
         NgOtpInputModule,
         HttpClientModule,
         FormsModule,
+        ReactiveFormsModule,
         DatePickerComponent
     ]
 })
