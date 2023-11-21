@@ -1,4 +1,6 @@
-<div class="row" style="margin-right: 40px">
+
+<form [formGroup]="kycDetail" (ngSubmit)="onSubmit()">       
+  <div class="row" style="margin-right: 40px">
     <div class="form-holder">
       <div class="row">
         <div class="col">
@@ -26,7 +28,7 @@
                 <label for="kyc" class="form-label"
                   >Choose KYC Type<span>*</span></label
                 >
-                <select class="form-select" id="floatingSelectGrid">
+                <select class="form-select" id="floatingSelectGrid"  formControlName="verificationOption">
                   <option value="1"></option>
                   <option value="1">PAN CARD</option>
                   <option value="2">AADHAR CAR</option>
@@ -39,7 +41,7 @@
                 <label for="number" class="form-label"
                   >PAN Card Number<span>*</span></label
                 >
-                <input class="form-name" type="name" class="form-control" />
+                <input class="form-name" type="name" class="form-control" formControlName="CardNumber"/>
               </div>
               <div>
                 <label for="fname" class="form-label"> </label>
@@ -72,24 +74,24 @@
             <div class="form-content">
               <div class="form-detail">
                 <label class="form-label" for="">Full Name<span>*</span></label>
-                <input class="form-control" type="text" />
+                <input class="form-control" type="text" formControlName="nomineeFirstName"/>
               </div>
               <div class="form-detail">
                 <label class="form-label" for=""
                   >Relation with Nominee <span>*</span></label
                 >
-                <select class="form-select" id="floatingSelectGrid">
+                <select class="form-select" id="floatingSelectGrid"  formControlName="nomineeRelationship">
                   <option value="1"></option>
-                  <option value="1">Father</option>
-                  <option value="2">Mother</option>
-                  <option value="2">Daughter</option>
-                  <option value="2">Son</option>
+                  <option value="Father">Father</option>
+                  <option value="Mother">Mother</option>
+                  <option value="Daughter">Daughter</option>
+                  <option value="Son">Son</option>
                   
                 </select>
               </div>
               <div class="form-age">
                 <label class="form-label" for="">Age <span>*</span></label>
-                <input class="form-control" type="text" />
+                <input class="form-control" type="text" formControlName="nomineeAge"/>
               </div>
             </div>
           </div>
@@ -102,13 +104,13 @@
         <div class="form-content">
           <div class="form-detail">
             <label class="form-label" for="">Email Id <span>*</span></label>
-            <input class="form-control" type="text" />
+            <input class="form-control" type="text"  formControlName="nomineeMail_id"/>
           </div>
           <div class="form-detail">
             <label class="form-label" for=""
               >Phone Number <span>*</span></label
             >
-            <input class="form-control" type="text" />
+            <input class="form-control" type="text" formControlName="nomineePhone_no" />
           </div>
   
       </div>
@@ -121,11 +123,12 @@
           <button class="btn-ekyc" routerLink="traveller-form"><img id="leftarrow" src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> Back </button>
         </div>
         <div>
-          <button class="btn-ekyc" routerLink="/traveller-form/medical-details" replaceUrl="true">Next <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
+          <button type="submit" class="btn-ekyc" routerLink="/traveller-form/medical-details" replaceUrl="true">Next <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
         </div>
   
     </div>
   </div>
   </div>
   </div>
-  
+  </div>
+</form>
