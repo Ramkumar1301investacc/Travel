@@ -28,12 +28,12 @@
     font-weight: 600;
 }
 
-.traveller-policy-filters {}
+/* .traveller-policy-filters {}
 
 .filters {
-    /* height: 100vh; */
-    /* border: 1px solid red; */
-}
+    height: 100vh; */
+    /* border: 1px solid red;
+} */
 
 .progressbar-container {
     display: flex;
