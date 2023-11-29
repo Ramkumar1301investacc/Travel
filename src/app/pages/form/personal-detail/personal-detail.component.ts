@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+import { FormDataService } from 'src/app/service/form-data.service';
 
 @Component({
   selector: 'app-personal-detail',
@@ -7,8 +9,29 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./personal-detail.component.css']
 })
 export class PersonalDetailComponent {
+  constructor(private router:Router,private fb : FormBuilder, private formDataService: FormDataService ){
 
-  personalDetail = new FormGroup({
+  }
+  personalDetail =this.fb.group({
+    salutation : [''],
+    firstName:[''],
+    middleName:['',{ }],
+    surName:['',{ }],
+    dob:['',{ }],
+    passportNo:['',{ }],
+    emailId:['',{ }],
+    phoneNumber:['',{ }],
+    alternatePhoneNumber:['',{ }],
+    addressLine_1:['',{ }],
+    addressLine_2:['',{ }],
+    addressLine_3:['',{ }],
+    state:['',{ }],
+    city:['',{ }],
+    pincode:['',{ }],
+    /* ispermanentAdress:new FormControl(''), */
+  })
+
+  /* personalDetail = new FormGroup({
     salutation : new FormControl('null'),
     firstName:new FormControl(''),
     middleName:new FormControl(''),
@@ -25,11 +48,13 @@ export class PersonalDetailComponent {
     city:new FormControl(''),
     pincode:new FormControl(''),
     /* ispermanentAdress:new FormControl(''), */
-    
-  });
 
   onSubmit() {
-    console.log(this.personalDetail.value)
+    console.log(this.personalDetail.value);
+    this.formDataService.setFormData(this.personalDetail.value);
+    console.log("personal Detail",this.personalDetail.value);
+   
+    this.router.navigate(['/traveller-form/kyc-nominee']);
     }
   
 

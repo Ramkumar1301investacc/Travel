@@ -16,11 +16,11 @@
 
     <div class="row card-heading">
 
-        <div class="col">
-            <p>Name: <span>Nisahnt </span></p>
-            <p>Email ID: <span>nishant8@gmail.com</span></p>
-            <p>Phone No. <span>+91 7620015581</span></p>
-            <p>Alternate No. <span>+91 3456778904</span></p>
+        <div class="col" *ngIf="formData">
+            <p>Name: <span>{{ formData?.firstName }} </span></p>
+            <p>Email ID: <span>{{formData?.emailId}}</span></p>
+            <p>Phone No. <span>+91  {{formData?.phoneNumber}}</span></p>
+            <p>Alternate No. <span>+91 {{formData?.emailId}}</span></p>
             <p>Gender : <span>Male</span></p>
             <p>DOB: <span>08/05/2001</span></p>
             <p>Passport No. <span> IND 153 92712</span></p>
@@ -33,10 +33,10 @@
         
         </div>
         <div class="col">
-            <p>Name: <span>Rohit James Nadar </span></p>
-            <p>realationship: <span>Brother </span></p>
-            <p>Email ID: <span>rohitnadar@gmail.com</span></p>
-            <p>Phone No. <span>+91 7620015581</span></p>
+            <p>Name: <span>{{ formData?.nomineeFirstName}}</span></p>
+            <p>realationship: <span>{{ formData?.nomineeRelationship}} </span></p>
+            <p>Email ID: <span>{{ formData?.nomineeMail_id}}</span></p>
+            <p>Phone No. <span>+91 {{formData?.nomineePhone_no}}</span></p>
 
         <div class="row ">
             <div class="col ">

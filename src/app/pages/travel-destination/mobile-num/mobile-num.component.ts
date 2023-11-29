@@ -14,7 +14,7 @@ export class MobileNumComponent {
    const moveProgress=document.querySelector('.cable-car') as HTMLElement | null;
    if (moveProgress) {
      
-     moveProgress.style.marginLeft = '510px';
+     moveProgress.style.marginLeft = '650px';
      
      // transition properties
      moveProgress.style.transition = 'margin-left 5s ease';
