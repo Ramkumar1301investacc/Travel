@@ -39,7 +39,10 @@ export class KycVerifyComponent {
   }); */
   onSubmit() {
     console.log(this.kycDetail.value)
-    this.formDataService.setFormData(this.kycDetail.value);
+
+    this.formDataService.setFormData({ ...this.formDataService.getFormData(), ...this.kycDetail.value });
     this.router.navigate(['/traveller-form/medical-details'])
+   
+    // Navigate to the next step or perform other actions
   }
 }

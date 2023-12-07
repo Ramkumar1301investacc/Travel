@@ -46,21 +46,21 @@ letter-spacing: 1px;
 }
 .bar1{
     height: 8px;
-    width: 195px;
+    width: 100%;
     border-radius: 64px;
 background: #37AFD4;
 margin-top: 10px;
 }
 .bar2{
     height: 8px;
-    width: 542px;
+    width: 100%;
     border-radius: 64px;
 background: #F9E59E;
 margin-top: 10px;
 }
 .bar3{
     height: 8px;
-    width: 115px;
+    width: 100%;
     border-radius: 64px;
 background: #D0E2FF;;
 margin-top: 10px;

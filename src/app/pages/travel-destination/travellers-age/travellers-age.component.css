@@ -8,13 +8,18 @@
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+.highlight{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%,rgba(255,241,194,1) 60%);
+}
 
 .form-card {
     border-radius: 24px;
     border: 1px solid #CEE7F3;
     background: #FBFDFE;
     box-shadow: 0px 4px 24px 0px rgba(134, 173, 193, 0.25);
-    width: 85%;
+   
+    width: 80%;
+    margin: 0 auto;
 }
 
 .form-main {
@@ -35,7 +40,7 @@
 
 .card-sub-header {
     height: 15px;
-    background: #FFF1C2;
+   /*  background: #FFF1C2; */
 }
 
 .traveller-input-section {

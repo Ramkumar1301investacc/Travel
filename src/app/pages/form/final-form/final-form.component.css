@@ -31,6 +31,9 @@ h1 {
     /* 133.333% */
     margin-bottom: 0px;
 }
+.form-container{
+    margin-right: 40px;
+}
 
 .traveller-left-div {
     border-right: 2px solid #CCE3FF;
@@ -111,4 +114,26 @@ line-height: normal;
     
     align-items: center;
 
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   
+}
+
+/* Styles for small screens (mobile) */
+@media screen and (max-width: 767px) {
+   .form-container{
+    margin: 0;
+    width: 100%;
+   }
+   .otp-div{
+    flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+   }
+  .accept-container{
+    flex-direction: column;
+  }
+  .form-row{
+    flex-direction: column;
+  }
 }

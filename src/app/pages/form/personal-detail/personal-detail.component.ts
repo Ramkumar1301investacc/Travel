@@ -51,7 +51,8 @@ export class PersonalDetailComponent {
 
   onSubmit() {
     console.log(this.personalDetail.value);
-    this.formDataService.setFormData(this.personalDetail.value);
+ 
+    this.formDataService.setFormData({ ...this.formDataService.getFormData(), ...this.personalDetail.value });
     console.log("personal Detail",this.personalDetail.value);
    
     this.router.navigate(['/traveller-form/kyc-nominee']);

@@ -1,7 +1,13 @@
+.form-container{
+   margin-right: 40px;
+   }
+
+
 .form-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .form-pages {
@@ -33,6 +39,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
 .line{
     border: 1px dashed #0B2C5C;
      width: 40px;
@@ -82,6 +89,7 @@ button {
     gap: 16px;
     margin-top: 16px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #leftarrow {
@@ -108,6 +116,7 @@ button {
     display: flex;
     align-content: center;
     align-items: center;
+  
 
 
 
@@ -124,4 +133,19 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 margin-top: -20px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+   
+}
+
+/* Styles for small screens (mobile) */
+@media screen and (max-width: 767px) {
+   .form-container{
+    margin: 0;
+    width: 100%;
+   }
+  .btn-content{
+    flex-direction: column;
+    justify-content: none;
+  }
 }
