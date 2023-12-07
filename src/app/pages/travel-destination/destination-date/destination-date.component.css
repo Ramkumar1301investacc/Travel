@@ -131,3 +131,12 @@
         width: 100%;
     }
 }
+@media screen and (max-width: 767px) {
+    .form-section-body {
+        padding: 15px;
+    }
+    .image-container{
+        display: none;
+    }
+    
+}
