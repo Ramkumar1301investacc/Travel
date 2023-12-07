@@ -28,6 +28,7 @@ import { KycVerifyComponent } from './pages/form/kyc-verify/kyc-verify.component
 import { MedicalFormComponent } from './pages/form/medical-form/medical-form.component';
 import { FinalFormComponent } from './pages/form/final-form/final-form.component';
 import { FormDataService } from './service/form-data.service';
+import { ProgressBarComponent } from './component/progress-bar/progress-bar.component';
 
 @NgModule({
     declarations: [
@@ -50,7 +51,8 @@ import { FormDataService } from './service/form-data.service';
         PersonalDetailComponent,
         KycVerifyComponent,
         MedicalFormComponent,
-        FinalFormComponent
+        FinalFormComponent,
+        ProgressBarComponent
     ],
     providers: [FormDataService],
     bootstrap: [AppComponent],
