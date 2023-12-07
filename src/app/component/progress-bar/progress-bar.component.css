@@ -71,3 +71,13 @@
     margin-left: 300px;
     margin-top: -22px;
 }
+
+/* FOR MOBILE*/
+@media screen and (max-width: 767px) {
+
+    .progressbar-container,
+    .cable-car {
+        display: none;
+    }
+
+}

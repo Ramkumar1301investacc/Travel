@@ -135,8 +135,17 @@
     .form-section-body {
         padding: 15px;
     }
-    .image-container{
-        display: none;
+    .title{
+        color: #535353;
+text-shadow: 0px 1px 1px rgba(18, 68, 84, 0.24);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 142.857% */
+text-transform: uppercase;
     }
-    
+    .card-header {
+        height: 64px;
+    }
 }
