@@ -159,4 +159,8 @@ text-transform: uppercase;
     .card-header {
         height: 64px;
     }
+    .travellers-num{
+        height: 50px;
+        width: 50px;
+    }
 }

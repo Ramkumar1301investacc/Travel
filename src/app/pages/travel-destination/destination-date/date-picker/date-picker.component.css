@@ -49,3 +49,27 @@
         width: 100%;
     }
 }
+
+
+/* for mobile added by ramkumar */
+@media screen and (max-width: 767px) {
+
+    
+    /* In your component's CSS file */
+::ng-deep .ngb-dp-content {
+    /* Your styles for ngb-dp-content */
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+  ::ng-deep .ngb-dp-months {
+    /* Your styles for ngb-dp-months */
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  
+
+
+}

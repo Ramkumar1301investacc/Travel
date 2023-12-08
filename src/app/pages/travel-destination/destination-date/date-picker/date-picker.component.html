@@ -15,7 +15,7 @@
     </div>
 
     <div class="date-div d-flex justify-content-around flex-wrap">
-        <div class="input-group fromDate-input">
+        <div class="input-group  d-flex  flex-wrap fromDate-input">
             <input #dpFromDate class="form-control" placeholder="yyyy-mm-dd" name="dpFromDate"
                 [value]="formatter.format(fromDate)" (input)="fromDate = validateInput(fromDate, dpFromDate.value)" />
             <button class="btn btn-outline-secondary bi bi-calendar3" (click)="datepicker.toggle()" type="button"><img
@@ -24,8 +24,8 @@
         </div>
 
         <div>
-            <div class="input-group toDate-input">
-                <input #dpToDate class="form-control" placeholder="yyyy-mm-dd" name="dpToDate"
+            <div class="input-group toDate-input d-flex flex-wrap">
+                <input #dpToDate class="form-control d-flex  flex-wrap" placeholder="yyyy-mm-dd" name="dpToDate"
                     [value]="formatter.format(toDate)" (input)="toDate = validateInput(toDate, dpToDate.value)" />
                 <button class="btn btn-outline-secondary bi bi-calendar3" (click)="datepicker.toggle()"
                     type="button"><img
@@ -35,3 +35,4 @@
         </div>
     </div>
 </div>
+
