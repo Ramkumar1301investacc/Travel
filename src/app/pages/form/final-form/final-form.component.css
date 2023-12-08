@@ -15,7 +15,7 @@
 .card-heading {
     display: flex;
     flex-direction: row;
-    
+    padding: 8px;
     
 
 
@@ -102,17 +102,14 @@ line-height: normal;
 }
 .accept-container{
     display: flex;
-    gap: 56px;
+    gap: 27px;
     
     align-items: center;
+    justify-content: center;
 }
 .accept{
     
-    display: flex;
-    gap: 3px;
-    justify-content: flex-end;
-    
-    align-items: center;
+  margin: 10px auto;
 
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
