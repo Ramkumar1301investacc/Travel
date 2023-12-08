@@ -123,3 +123,29 @@
         position: static;
     }
 }
+
+
+/* for mobile added by ramkumar */
+@media screen and (max-width: 767px) {
+
+   .upper-section h3 {
+    color: #535353;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.64px;
+}
+.home-logo {
+    width: 120px;
+}
+.upper-section .home-logo {
+    width: 96px;
+}
+.upper-section h2 {
+    color: #37AFD4;
+    font-size: 32px;
+}
+.sub-head {
+    font-size: 18px;
+ }
+}
