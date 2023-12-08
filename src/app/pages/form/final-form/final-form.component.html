@@ -1,7 +1,7 @@
 <div class="row form-container">
   <div class="form-holder">
-  <div class="row form-row">
-    <div class="col">
+  <div class="row form-row ">
+    <div class="col"  style="margin-right: -25px;">
       <div class="card card-heading traveller-left-div"><h1>Traveller Detail</h1>
       </div>
       <div>
@@ -15,9 +15,7 @@
         <P>PAN No. <span>BNZPM2501F</span></P>
         
         <P>Address: <span>{{formData?.addressLine_1}} {{formData?.addressLine_2}} {{formData?.addressLine_3}}</span></P>
-          <!-- addressLine_1:['',{ }],
-          addressLine_2:['',{ }],
-          addressLine_3:['',{ }], -->
+        
 
       </div>
     </div>
@@ -47,14 +45,10 @@
 
     </div>
   </div>
-  <div class="row" style="margin-top:12px; margin-left:30px" >
+  <div class="row" style="margin-top:12px;" >
     <div class="col">
         <div class="accept-container">
-            <div class="accept">
-              <input type="checkbox">
-            <p> I have read all the details and give confirmation that all details added are correct</p>
-           
-        </div>       
+                
              <button class="btn-ekyc" routerLink="" replaceUrl="tue">Proceed <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
         </div>
     </div>
@@ -63,98 +57,68 @@
 
 
   </div>
-  </div>
+  </div> 
 
 
-    <!-- <div class="row card card-heading">
+   
 
-      <div class="col traveller-left-div p-2">
-        <h1>Traveler Details</h1>
-      </div>
-      <div class="col" *ngIf="formData">
-        <p>Name: {{ formData?.firstName }} </p>
-        <p>Email ID: <span>{{formData?.emailId}}</span></p>
-        <p>Phone No. <span>+91  {{formData?.phoneNumber}}</span></p>
-        <p>Alternate No. <span>+91 {{formData?.emailId}}</span></p>
-        <p>Gender : <span>Male</span></p>
-        <p>DOB: <span>08/05/2001</span></p>
-        <p>Passport No. <span> IND 153 92712</span></p>
-        <P>PAN No. <span>BNZPM2501F</span></P>
-        
-        <P>Address: <span>546/5th Floor Marines Bay Co-Op Hsg Soc, D.P.Goankar Marg, LowerParel, Mumbai - 400013, Maharashtra-IND</span></P>
+<!-- for motor -->
 
-
-    
-    
-    </div>
-
-
-      <div class="col p-2" >
-        <h1>Nominee Details</h1>
+<!-- <div class="row form-container">
+  <div class="form-holder">
+    <div class="row form-row">
+      <div class="col" style="margin-right: -25px;">
+        <div class="card card-heading traveller-left-div"><h1>Traveller Detail</h1>
+        </div>
+        <div>
+          <p>Name: {{ formData?.firstName }} </p>
+          <p>Email ID: <span>{{formData?.emailId}}</span></p>
+          <p>Phone No. <span>+91  {{formData?.phoneNumber}}</span></p>
+          <p>Alternate No. <span>+91 {{formData?.emailId}}</span></p>
+          <p>Gender : <span>Male</span></p>
+          <p>DOB: <span>{{formData?.dob}}</span></p>
+          <p>{{formData?. verificationOption}} <span> {{formData?.CardNumber}}</span></p>
+          <P>PAN No. <span>BNZPM2501F</span></P>
+          
+          <P>Address: <span>{{formData?.addressLine_1}} {{formData?.addressLine_2}} {{formData?.addressLine_3}}</span></P>
+          
+  
+        </div>
       </div>
       <div class="col">
-        <p>Name: <span>{{ formData?.nomineeFirstName}}</span></p>
-        <p>realationship: <span>{{ formData?.nomineeRelationship}} </span></p>
-        <p>Email ID: <span>{{ formData?.nomineeMail_id}}</span></p>
-        <p>Phone No. <span>+91 {{formData?.nomineePhone_no}}</span></p>
-
-
-    </div>
-
-    <div class="row card-heading">
-
-       
+        <div class="card card-heading traveller-left-div"><h1>Nominee Detail</h1></div>
+        <div>
+          <p>Name: <span>{{ formData?.nomineeFirstName}}</span></p>
+          <p>realationship: <span>{{ formData?.nomineeRelationship}} </span></p>
+          <p>Email ID: <span>{{ formData?.nomineeMail_id}}</span></p>
+          <p>Phone No. <span>+91 {{formData?.nomineePhone_no}}</span></p>
+  
+        </div>
+        <div><h1>Medical Details</h1></div>
+        <P>Heart Conditions</P>
+        <div class="otp-div" style="margin-top:12px">
+          <ng-otp-input [config]="{length:4}"></ng-otp-input>
+          <button class="btn-ekyc" routerLink="" replaceUrl="tue">Next <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
         
-        <div class="row ">
-            <div class="col ">
-                <div class="card p-2">
-                    <h1>
-                    Medical Details
-                    
-                </h1>
-            </div>
-            
-                <P>Heart Conditions</P>
-            </div>
+        
         </div>
-
-        <div class="row  " >
-            <div class="col ">
-                <div class="card p-2 otp-div">
-                    <h1>
-                    OTP Details
-                    </h1>
-                    <button class="otp-btn">Generate OTP</button>
-            </div>
-            
-            <div class="otp-div" style="margin-top:12px">
-                <ng-otp-input [config]="{length:4}"></ng-otp-input>
-                <button class="btn-ekyc" routerLink="" replaceUrl="tue">Next <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
-    
-
-            </div>
-
-            
-            </div>
-        </div>
-        </div>
-
-
-
+        
+  
+</div>
+<div class="row" style="margin-top: 12px; ">
+  <div class="col">
+    <div class="accept-container">
+      <div class="accept">
+       
+      
+      <button class="btn-ekyc" routerLink="" replaceUrl="tue">
+       Pay Now!
+        <img
+          src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg"
+          alt=""
+        />
+      </button>
     </div>
-
   </div>
-  <div class="row" style="margin-top:12px; margin-left:30px" >
-    <div class="col">
-        <div class="accept-container">
-            <div class="accept">
-              <input type="checkbox">
-            <p> I have read all the details and give confirmation that all details added are correct</p>
-           
-        </div>       
-             <button class="btn-ekyc" routerLink="" replaceUrl="tue">Proceed <img src="../../../../assets/Travel_Page_Assets/Form Screen/Icons/Open Dropdown CaretRight-Icon.svg" alt=""> </button>
-        </div>
-    </div>
-
-  </div>
+</div>
 </div> -->
