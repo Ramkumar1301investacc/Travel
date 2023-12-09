@@ -10,6 +10,12 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif!important;
 }
+:root {
+  --bs-backdrop-opacity: 0; /* Adjust the value accordingly */
+}
+.modal-backdrop.show {
+  opacity: 0 ;}
+  
 
 body {
   background: #FBFDFE;

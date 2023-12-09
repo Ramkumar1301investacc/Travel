@@ -1,4 +1,5 @@
-.navbar-sect {
+  
+/* .navbar-sect {
     background-color: hsla(194, 65%, 52%, 1);
     height: 80px;
     color: white;
@@ -46,9 +47,9 @@ ul>li {
     color: black;
     font-weight: 500;
     width: 20px;
-}
+} */
 
-/* .navigation-bar {
+.navigation-bar {
     background: #37AFD4;
     padding: 10px 20px;
     position: sticky;
@@ -145,10 +146,5 @@ ul>li {
         transform: rotateY(180deg);
     }
 
-      .modal-backdrop {
-        opacity: 0!important;
-      }
-     
-      
-    
-} */
+   
+}
